@@ -10,6 +10,7 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/resources/Features/"
 		,glue = {"com.vtiger.StepDefinations"}
 		,plugin = {"pretty","html:target/cucumber-report"}
+		//,tags = {"@run"}
 		
 		
 )

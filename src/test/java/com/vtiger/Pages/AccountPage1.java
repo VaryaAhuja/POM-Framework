@@ -43,20 +43,27 @@ public class AccountPage1 extends HeaderPage1 {
 	@FindBy(linkText="vtiger")
 	WebElement elmtiger;
 	
+	@FindBy(linkText="vtigerCRM Inc")
+	WebElement elmvt;
+	
+	
+	
+	
 	
 	public void createaccount(String accname)
 	{
+		
 		ca.EnterValue(driver, elmacc,accname,"Account");
 	
 	}
 	
 	public void createaccset()
 	{
-		clicknewaccount();
-		ca.EnterValue(driver, elmacc,"vtiger","Accountname");
+		
+		
 		ca.ClickElement(driver,elmbtn,"button");
-		ca.switchwindow(driver,elmtiger,"Entered");
-		//ca.ClickElement(driver,elmsearch,"Search");
+		ca.switchwindow(driver,elmvt,"Entered");
+		
 		
 		ca.ClickElement(driver,elmsav,"saved data");
 		

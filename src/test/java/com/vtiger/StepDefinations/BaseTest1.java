@@ -100,7 +100,7 @@ public class BaseTest1 {
 		htmlReporter.config().setTheme(Theme.DARK); 
 	}
 
-	@AfterSuite(groups= {"Smoke","Sanity"})
+	
 	public void closebrowser()
 	{
 		HeaderPage1 Hd1 = new HeaderPage1(driver);

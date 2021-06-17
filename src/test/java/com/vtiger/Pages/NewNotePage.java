@@ -44,11 +44,12 @@ public class NewNotePage extends HeaderPage1 {
 		ca.EnterValue(driver,elmtle,"vtiger","testing");
 		ca.EnterValue(driver,elmpty,"Potentials","value");
 		
+		Thread.sleep(3000);
 		
-	Actions builder = new Actions(driver);
-		//builder.moveToElement(elmfil).build().perform();
-	builder.click(elmfil).build().perform();
-	Thread.sleep(3000);
+		
+	   Actions builder = new Actions(driver);
+	   builder.moveToElement(elmfil).build().perform();
+	
 			
 		
 		StringSelection ss = new StringSelection("C:\\Users\\VARYA\\Desktop\\varya.txt");
@@ -68,7 +69,7 @@ public class NewNotePage extends HeaderPage1 {
 		
 		robo.keyPress(KeyEvent.VK_ENTER);
 		robo.keyRelease(KeyEvent.VK_ENTER);
-		
+	
 	}
 }
 

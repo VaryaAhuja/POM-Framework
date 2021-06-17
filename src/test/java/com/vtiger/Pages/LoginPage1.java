@@ -28,15 +28,15 @@ public class LoginPage1 extends HeaderPage1 {
 	@FindBy(name="Login")
 	WebElement elmlogin;
 	
-	public void SetUsername(String userid)
+	public void SetUsername()
 	{
-		ca.EnterValue(driver,elmuser,userid,"username");
+		ca.EnterValue(driver,elmuser,"admin","username");
 	}
 	
 	
-	public void SetPassword(String pass)
+	public void SetPassword()
 	{
-		ca.EnterValue(driver,elmpass,pass,"password");
+		ca.EnterValue(driver,elmpass,"admin","password");
 	}
 	
 	public void Login()
